@@ -11,7 +11,7 @@ https://user-images.githubusercontent.com/65976843/121733387-ce1a4f00-cac9-11eb-
 Formulario Sign In/Sign Up. Altera formulario com um click, caso queira fazer login ou se registrar, mostrando uma animação.
 
 ## Tecnologias utilizadas
-<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/carolas1/form-signin-signup">
+
 HTML <br>
 CSS <br>
 JavaScript
