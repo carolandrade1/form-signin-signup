@@ -1,0 +1,255 @@
+/* ---- GOOGLE FONTS -----*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* ---- VARIABLES CSS -----*/
+:root {
+  /*--- COLOR ---*/
+  --first-color: #583579;
+  --first-color-dark: #311944;
+  --first-color-light: #69646e;
+  --first-color-lighten: #f2f2f2;
+  --first-color-ldark: #644996;
+  /*--- FONT ---*/
+  --body-font: "Roboto", sans-serif;
+  --h1-font-size: 1.8rem;
+  --normal-font-size: 0.94rem;
+  --small-font-size: 0.82rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --normal-font-size: 1rem;
+    --small-font-size: 0.88rem;
+  }
+}
+
+/* --------- BASE ----------*/
+*,::before,::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--first-color-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* --------- LOGIN ----------*/
+.login {
+  display: grid;
+  grid-template-columns: 100%;
+  height: 100vh;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.login__content {
+  display: grid;
+}
+
+.login__img {
+  place-self: center;
+}
+
+.login__img img {
+  width: 265px;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+.login__forms {
+  position: relative;
+  height: 368px;
+}
+/* conteiner form */
+.login__registre, .login__create {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  background-color: var(--first-color-lighten);
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(35, 0, 77, 0.2);
+  animation-duration: 0.4s;
+  animation-name: animate-login;
+}
+
+@keyframes animate-login {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.login__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 2rem;
+}
+
+.label__box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: .5rem 0;
+}
+
+.login__label {
+  font-size: 1.1rem;
+  padding-left: .2rem;
+}
+
+.login__icon {
+  font-size: 1.2rem;
+  color: var(--first-color);
+}
+
+.login__box {
+  display: flex;
+  padding: .8rem;
+  background-color: #fff;
+  margin-top: .5rem;
+  border-radius: 0.5rem;
+}
+
+.login__input {
+  border: none;
+  outline: none;
+  font-size: var(--small-font-size);
+  font-weight: 300;
+  color: var(--first-color-dark);
+}
+
+.login__input::placeholder {
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  color: var(--first-color-light);
+}
+
+.login__forgot {
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  margin-top: 0.5rem;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  color: var(--first-color-light);
+}
+
+.login__button {
+  display: block;
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: var(--first-color);
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.login__button:hover {
+  background-color: var(--first-color-dark);
+}
+
+.login__account, .login__signin, .login__signup {
+  font-weight: 500;
+  font-size: var(--small-font-size);
+}
+
+.login__account {
+  color: var(--first-color-dark);
+}
+
+.login__signin, .login__signup {
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.login__social {
+  margin-top: 2rem;
+}
+
+.login__social-icon {
+  font-size: 1.5rem;
+  color: var(--first-color-dark);
+  margin: 0 1.5rem;
+}
+
+/*--- SHOW LOGIN ---*/
+.block {
+  display: block;
+}
+
+/*--- HIDDEN LOGIN ---*/
+.none {
+  display: none;
+}
+
+/* --------- MEDIA QUERIES ----------*/
+@media screen and (min-width: 576px) {
+    .login__forms {
+        width: 348px;
+        justify-self: center;
+    }
+    .login__img img {
+      width: 300px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+  .login {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .login__content {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+  }
+
+  .login__img {
+    display: flex;
+    width: 600px;
+    height: 650px;
+    background-color: var(--first-color-ldark);
+    border-radius: 1rem;
+    padding-left: 1rem;
+  }
+
+  .login__img img {
+    width: 370px;
+    height: 370px;
+    margin-top: 140px;
+    margin-left: 25px;
+  }
+
+  .login__registre, .login__create {
+    left: -11rem;
+  }
+
+  .login__registre {
+    bottom: -2rem;
+  }
+
+  .login__create {
+    bottom: -5.5rem;
+  }
+}
