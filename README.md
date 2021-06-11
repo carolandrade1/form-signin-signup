@@ -1,8 +1,10 @@
+
+
+
 # Formulario Responsivo Sign In / Sign Up
 
 <a href="https://carolandrade1.github.io/form-signin-signup/">Live</a>
 
-![rtfnjfjy](https://user-images.githubusercontent.com/65976843/120075435-a235ad00-c077-11eb-8fb9-5928a6c1e653.PNG)
 
 
 ## Informações Gerais
