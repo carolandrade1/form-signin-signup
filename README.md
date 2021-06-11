@@ -3,9 +3,9 @@
 
 # Formulario Responsivo Sign In / Sign Up
 
-<a href="https://carolandrade1.github.io/form-signin-signup/">Live</a>
+<a href="https://carolandrade1.github.io/form-signin-signup/">See Live</a>
 
-
+https://user-images.githubusercontent.com/65976843/121733387-ce1a4f00-cac9-11eb-8f6b-748122739d35.mp4
 
 ## Informações Gerais
 Formulario Sign In/Sign Up. Altera formulario com um click, caso queira fazer login ou se registrar, mostrando uma animação.
